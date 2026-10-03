@@ -1,0 +1,19 @@
+# Normalize text files to LF in the repository and in the working tree.
+* text=auto eol=lf
+
+# Windows batch scripts are the one format where LF can change behaviour
+# under cmd.exe, so keep them CRLF. (No such files are present today.)
+*.bat text eol=crlf
+*.cmd text eol=crlf
+
+# Binary assets must never be line-ending converted.
+*.png binary
+*.jpg binary
+*.jpeg binary
+*.gif binary
+*.ico binary
+*.pptx binary
+*.pdf binary
+
+# SVG is text, despite being an image.
+*.svg text eol=lf

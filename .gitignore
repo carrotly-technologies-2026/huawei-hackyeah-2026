@@ -1,0 +1,35 @@
+# Build output
+/build/
+**/build/
+/entry/build/
+/.hvigor/
+**/.hvigor/
+/oh_modules/
+**/oh_modules/
+.cxx/
+**/.preview/
+*.hap
+*.app
+*.har
+*.hsp
+
+# Local config and IDE
+/local.properties
+.idea/
+.vscode/
+.DS_Store
+*.log
+
+# Signing material — never commit
+*.p12
+*.p7b
+*.cer
+*.csr
+*.keystore
+*.jks
+.signing/
+
+# Dependencies and caches
+node_modules/
+__pycache__/
+*.pyc
